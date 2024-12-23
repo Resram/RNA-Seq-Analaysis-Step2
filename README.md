@@ -21,7 +21,7 @@ cd RNAseq_analysis
 ---
 ## Step 2: Download Data
 ```bash
-   wget ftp://ftp.ccb.jhu.edu/pub/RNAseq_protocol/chrX_data.tar.gz
+wget ftp://ftp.ccb.jhu.edu/pub/RNAseq_protocol/chrX_data.tar.gz
 ```
 ---
 ## Step 3: Extract Data
@@ -29,14 +29,14 @@ cd RNAseq_analysis
 tar -xzf chrX_data.tar.gz
 ```
 ---
-# Step 4: Quality Control with FastQC
-## Step 4a : Create an output folder for FastQC reports:
+## Step 4: Quality Control with FastQC
+### Step 4a : Create an output folder for FastQC reports:
 ```bash
 mkdir qc_output
 ```
 Repeat the process for all the fiels
 ---
-## Step 4b :Run FastQC on your raw FASTQ files
+### Step 4b :Run FastQC on your raw FASTQ files
 ```bash
 fastqc chrX_data/samples/ERR188044_chrX_1.fastq.gz chrX_data/samples/ERR188044_chrX_2.fastq.gz -o qc_output
 ```
