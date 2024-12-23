@@ -29,14 +29,15 @@ wget ftp://ftp.ccb.jhu.edu/pub/RNAseq_protocol/chrX_data.tar.gz
 tar -xzf chrX_data.tar.gz
 ```
 ---
-## Step 4: Quality control with FastQC
-### Step 4a : Create an output folder for FastQC reports:
+## Step 4: Activate your conda env
+## Step 5: Quality control with FastQC
+### Step 5a : Create an output folder for FastQC reports:
 ```bash
 mkdir qc_output
 ```
 Repeat the process for all the fiels
 ---
-### Step 4b: Run FastQC on your raw FASTQ files
+### Step 5b: Run FastQC on your raw FASTQ files
 ```bash
 fastqc chrX_data/samples/ERR188044_chrX_1.fastq.gz chrX_data/samples/ERR188044_chrX_2.fastq.gz -o qc_output
 ```
@@ -74,7 +75,7 @@ fastqc chrX_data/samples/ERR188454_chrX_1.fastq.gz chrX_data/samples/ERR188454_c
 fastqc chrX_data/samples/ERR204916_chrX_1.fastq.gz chrX_data/samples/ERR204916_chrX_2.fastq.gz -o qc_output
 ```
 ---
-## Step 5: Run Trimmomatic for paired-end data
+## Step 6: Run Trimmomatic for paired-end data
 Trimmomatic processes paired-end FASTQ files and outputs the cleaned, trimmed sequences into paired and unpaired files. The following command demonstrates how to run Trimmomatic with a specific set of parameters to trim the sequences.
 Note: This step is optional. Based on the quality control results from FastQC, you may find that trimming is unnecessary for your dataset. If you find that trimming is required, you can follow the steps below.
 ```bash
