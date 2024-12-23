@@ -1,4 +1,4 @@
-# RNA-Seq Analysis Pipeline
+# RNA-Seq Analysis Pipeline : Quality Control
 
 This pipeline provides a series of steps for performing RNA-Seq data quality control (QC) analysis using FastQC. It includes steps to download data, organize files, run FastQC, and generate QC reports for each sample.
 
@@ -15,7 +15,7 @@ tar for extracting compressed files
 
 Create a new directory to organize your data and results. This directory will hold the raw data, FastQC results, and final reports.
   ```bash
-mkdir NAseq_analysis
+mkdir RNAseq_analysis
 cd RNAseq_analysis
 ```
 ---
