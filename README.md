@@ -19,17 +19,17 @@ mkdir RNAseq_analysis
 cd RNAseq_analysis
 ```
 ---
-## Step 2: Download Data
+## Step 2: Download data
 ```bash
 wget ftp://ftp.ccb.jhu.edu/pub/RNAseq_protocol/chrX_data.tar.gz
 ```
 ---
-## Step 3: Extract Data
+## Step 3: Extract data
    ```bash
 tar -xzf chrX_data.tar.gz
 ```
 ---
-## Step 4: Quality Control with FastQC
+## Step 4: Quality control with FastQC
 ### Step 4a : Create an output folder for FastQC reports:
 ```bash
 mkdir qc_output
