@@ -10,6 +10,7 @@ FastQC for quality control analysis
 wget for downloading files
 
 tar for extracting compressed files
+
 ---
 ## Step 1: Create a working directory
 
