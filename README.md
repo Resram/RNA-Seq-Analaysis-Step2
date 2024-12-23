@@ -35,7 +35,7 @@ tar -xzf chrX_data.tar.gz
 ```bash
 mkdir qc_output
 ```
-Repeat the process for all the fiels
+Repeat the process for all the files
 ---
 ### Step 5b: Run FastQC on your raw FASTQ files
 ```bash
